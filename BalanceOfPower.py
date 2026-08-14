@@ -43,7 +43,7 @@ def _(mo):
 @app.cell
 def _(mo):
     _src = (
-        "docs/images/AridCyclist_20260812_114639.png"
+        "https://github.com/science4performance/RidingTheHeatwave/blob/master/docs/images/AridCyclist_20260812_114639.png?raw=true"
     )
     mo.image(src=_src, width="360px", height="360px", rounded=True)
     return
