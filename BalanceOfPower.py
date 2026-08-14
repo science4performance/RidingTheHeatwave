@@ -40,15 +40,12 @@ def _(mo):
     return
 
 
-
-@app.cell
+@app.cell(hide_code=True)
 def _(mo):
-    mo.image(
-        src="https://raw.githubusercontent.com/science4performance/RidingTheHeatwave/master/docs/images/AridCyclist_20260812_114639.png",
-        width="360",
-        height="360",
-        rounded=True
-    )
+    mo.md("""
+    <img src="https://raw.githubusercontent.com/science4performance/RidingTheHeatwave/master/docs/images/AridCyclist_20260812_114639.png" width="360">
+    """)
+    return
 
 
 @app.cell(hide_code=True)
