@@ -40,12 +40,20 @@ def _(mo):
     return
 
 
-@app.cell
+@app.cell(hide_code=True)
 def _(mo):
-    _src = (
-        "https://github.com/science4performance/RidingTheHeatwave/blob/master/docs/images/AridCyclist_20260812_114639.png?raw=true"
-    )
-    mo.image(src=_src, width="360px", height="360px", rounded=True)
+    mo.md(r"""
+    <img src="https://science4performance.com/wp-content/uploads/2026/08/AridCyclist_20260812_114639.png" >
+    """)
+    return
+
+
+@app.cell
+def _():
+    #_src = (
+    #    "https://github.com/science4performance/RidingTheHeatwave/blob/master/docs/images/AridCyclist_20260812_114639.png?raw=true"
+    #)
+    #mo.image(src=_src, width="360px", height="360px", rounded=True)
     return
 
 
