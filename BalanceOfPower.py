@@ -34,7 +34,6 @@ def _():
         <meta name="viewport" content="width=device-width, initial-scale=1">
         """)
 
-
     return go, math, mo
 
 
@@ -249,6 +248,7 @@ def _(
         sweat_status = "⚠️ **Warning:** Evaporation is maxed out. Excess sweat will drip off and waste fluid without cooling."
 
     # Assemble the final UI grid
+    controls = mo.md("<div class='mobile-container'>")  # open wrapper
     controls = mo.hstack(
         [
             mo.vstack(
@@ -275,7 +275,9 @@ def _(
         ],
         gap=1,
     )
+    mo.md("</div>")  # close wrapper
     controls
+
     return
 
 
