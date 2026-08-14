@@ -1,0 +1,216 @@
+{
+  "version": "1",
+  "metadata": {
+    "marimo_version": "0.18.3"
+  },
+  "cells": [
+    {
+      "id": "setup",
+      "code_hash": "237922e510a88456ec7c30de6282610e",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "Hbol",
+      "code_hash": null,
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "MJUe",
+      "code_hash": "b41bdb34dcbff99602bea46787c25fd7",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "vblA",
+      "code_hash": "872a4b93766d8fd3e5df16660bc22d43",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h1 id=\"riding-the-heatweave-the-balance-of-power\">Riding the Heatweave: The Balance of Power</h1>\n<span class=\"paragraph\">This is the first part of a series of three articles about cycling in a world of increasing heatwaves and global warming. We look at the physics of heat loss.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "bkHC",
+      "code_hash": "83c5e1051792850e803c93bfce11b68f",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<img src='./@file/1755552-6277735-hS44v0Yj.png' style='width: 360px;height: 360px;border-radius: 4px' />"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "lEQa",
+      "code_hash": "f0f0a5048ef438005b9e74403a1f6282",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"the-thermodynamics-of-cycling-in-the-heat\">The Thermodynamics of Cycling in the Heat</h2>\n<span class=\"paragraph\">When you look down at your power meter and see 280 W, it is telling you the rate at which your legs are transferring energy into the drivechain to overcome rolling resistance, gravity and aerodynamic drag. However this is just a fraction of power that your body is generating. Muscles are only 20% to 25% efficient at converting chemical energy (think ATP) into mechanical energy. The rest of the effort is wasted in the form of internal heat. <br>\nRiding at 280 W, your body is producing excess heat equivalent to a 1 kW electric heater. Heatstroke occurs when body temperature exceeds <marimo-tex class=\"arithmatex\">||(40^\\circ\\text{C}||)</marimo-tex>. Under severe heat stress, proteins start to unfold and stick together like a poached egg. To prevent your core temperature from soaring into dangerous territory, your body must continuously dissipate high thermal loads into the surrounding environment.<br>\nThere are three ways for the body to lose heat:</span>\n<ul>\n<li>the flow of cooler air over the skin</li>\n<li>the body continuously emits infra-red radiation into the environment</li>\n<li>evaporation of sweat</li>\n</ul></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "PKri",
+      "code_hash": "1eab48b96a38bdc399b51db4871c41f1",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"power-balance-equation\">Power Balance Equation</h2>\n<span class=\"paragraph\">In classical environmental physiology, human thermoregulation is described by the Heat Balance Equation, which tracks total thermal energy (<marimo-tex class=\"arithmatex\">||(S||)</marimo-tex>) stored in human tissue over time. Because cyclists quantify effort in Watts (Joules per second, or <marimo-tex class=\"arithmatex\">||(\\text{J/s}||)</marimo-tex>), we can divide every term in the traditional heat balance equation by time. This converts the thermodynamic balance sheet directly into a Power Balance Equation:<br><marimo-tex class=\"arithmatex\">||(P_{\\text{storage}} = P_{\\text{heat}} -  P_{\\text{conv}} - P_{\\text{rad}} - P_{\\text{evap}}||)</marimo-tex> <br>\nWhere every term is expressed in Watts (<marimo-tex class=\"arithmatex\">||(W||)</marimo-tex>):</span>\n<ul>\n<li><marimo-tex class=\"arithmatex\">||(P_{\\text{storage}}||)</marimo-tex> (Net Thermal Storage Power): The rate at which heat is accumulating in your body. If <marimo-tex class=\"arithmatex\">||(P_{\\text{storage}} = 0||)</marimo-tex>, you are in thermal equilibrium. If <marimo-tex class=\"arithmatex\">||(P_{\\text{storage}} &gt; 0||)</marimo-tex>, your core body temperature is rising.</li>\n<li>\n<span class=\"paragraph\"><marimo-tex class=\"arithmatex\">||(P_{\\text{heat}}||)</marimo-tex> (Internal Heat Production): Rate of production of heat in the muscles as a result of producing mechanical power. This is the total rate of chemical energy expenditure by your body <marimo-tex class=\"arithmatex\">||(P_{\\text{met}}||)</marimo-tex> minus the mechanical work output measured by your bike's power meter <marimo-tex class=\"arithmatex\">||(P_{\\text{mech}}||)</marimo-tex>.</span>\n<ul>\n<li><marimo-tex class=\"arithmatex\">||(P_{\\text{heat}} = P_{\\text{met}}  - P_{\\text{mech}}||)</marimo-tex></li>\n</ul>\n</li>\n<li><marimo-tex class=\"arithmatex\">||(P_{\\text{conv}}||)</marimo-tex> (Convective Power Transfer): Rate of thermal energy lost (or gained) via airflow moving across your skin.</li>\n<li><marimo-tex class=\"arithmatex\">||(P_{\\text{rad}}||)</marimo-tex> (Radiative Power Transfer): Rate of thermal energy exchanged between body and environment (sunlight, air and ground heat) via electromagnetic radiation. Direct sunlight can have a significant warming effect.</li>\n<li><marimo-tex class=\"arithmatex\">||(P_{\\text{evap}}||)</marimo-tex> (Evaporative Power Loss): Rate of thermal energy dissipated through sweat evaporation</li>\n</ul></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "Xref",
+      "code_hash": "4f46dc8a4f67624b410efce4462973c7",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"knowledge-is-power\">Knowledge is Power</h2>\n<span class=\"paragraph\">You can use this interactive tool to gain valuable insights from the Power Balance Equation that can help you cope with riding during a heatwave.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "SFPL",
+      "code_hash": "5fe1e196bedb92089b7ddbb915a53ed5",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "BYtC",
+      "code_hash": "008657dc1086077f374c7bdd9ed0ef86",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "RGSE",
+      "code_hash": "a75b09a2c094991a7fa7a852ac34b6c5",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<marimo-plotly data-figure='{&quot;data&quot;:[{&quot;connector&quot;:{&quot;line&quot;:{&quot;color&quot;:&quot;rgb(63, 63, 63)&quot;,&quot;width&quot;:1}},&quot;decreasing&quot;:{&quot;marker&quot;:{&quot;color&quot;:&quot;#3b82f6&quot;}},&quot;increasing&quot;:{&quot;marker&quot;:{&quot;color&quot;:&quot;#ef4444&quot;}},&quot;measure&quot;:[&quot;relative&quot;,&quot;relative&quot;,&quot;relative&quot;,&quot;relative&quot;,&quot;total&quot;],&quot;name&quot;:&quot;Power Balance&quot;,&quot;orientation&quot;:&quot;v&quot;,&quot;text&quot;:[&quot;+886 W&quot;,&quot;-102 W&quot;,&quot;-16 W&quot;,&quot;-767 W&quot;,&quot;0 W&quot;],&quot;textposition&quot;:&quot;outside&quot;,&quot;totals&quot;:{&quot;marker&quot;:{&quot;color&quot;:&quot;#8b5cf6&quot;}},&quot;x&quot;:[&quot;Internal Heat&quot;,&quot;Convection&quot;,&quot;Radiation&quot;,&quot;Evaporation&quot;,&quot;Net Heat Storage&quot;],&quot;y&quot;:[886.3636363636364,-102.2939260270147,-16.165740164951277,-767.9039701716704,0.0],&quot;type&quot;:&quot;waterfall&quot;}],&quot;layout&quot;:{&quot;template&quot;:{&quot;data&quot;:{&quot;histogram2dcontour&quot;:[{&quot;type&quot;:&quot;histogram2dcontour&quot;,&quot;colorbar&quot;:{&quot;outlinewidth&quot;:0,&quot;ticks&quot;:&quot;&quot;},&quot;colorscale&quot;:[[0.0,&quot;#0d0887&quot;],[0.1111111111111111,&quot;#46039f&quot;],[0.2222222222222222,&quot;#7201a8&quot;],[0.3333333333333333,&quot;#9c179e&quot;],[0.4444444444444444,&quot;#bd3786&quot;],[0.5555555555555556,&quot;#d8576b&quot;],[0.6666666666666666,&quot;#ed7953&quot;],[0.7777777777777778,&quot;#fb9f3a&quot;],[0.8888888888888888,&quot;#fdca26&quot;],[1.0,&quot;#f0f921&quot;]]}],&quot;choropleth&quot;:[{&quot;type&quot;:&quot;choropleth&quot;,&quot;colorbar&quot;:{&quot;outlinewidth&quot;:0,&quot;ticks&quot;:&quot;&quot;}}],&quot;histogram2d&quot;:[{&quot;type&quot;:&quot;histogram2d&quot;,&quot;colorbar&quot;:{&quot;outlinewidth&quot;:0,&quot;ticks&quot;:&quot;&quot;},&quot;colorscale&quot;:[[0.0,&quot;#0d0887&quot;],[0.1111111111111111,&quot;#46039f&quot;],[0.2222222222222222,&quot;#7201a8&quot;],[0.3333333333333333,&quot;#9c179e&quot;],[0.4444444444444444,&quot;#bd3786&quot;],[0.5555555555555556,&quot;#d8576b&quot;],[0.6666666666666666,&quot;#ed7953&quot;],[0.7777777777777778,&quot;#fb9f3a&quot;],[0.8888888888888888,&quot;#fdca26&quot;],[1.0,&quot;#f0f921&quot;]]}],&quot;heatmap&quot;:[{&quot;type&quot;:&quot;heatmap&quot;,&quot;colorbar&quot;:{&quot;outlinewidth&quot;:0,&quot;ticks&quot;:&quot;&quot;},&quot;colorscale&quot;:[[0.0,&quot;#0d0887&quot;],[0.1111111111111111,&quot;#46039f&quot;],[0.2222222222222222,&quot;#7201a8&quot;],[0.3333333333333333,&quot;#9c179e&quot;],[0.4444444444444444,&quot;#bd3786&quot;],[0.5555555555555556,&quot;#d8576b&quot;],[0.6666666666666666,&quot;#ed7953&quot;],[0.7777777777777778,&quot;#fb9f3a&quot;],[0.8888888888888888,&quot;#fdca26&quot;],[1.0,&quot;#f0f921&quot;]]}],&quot;contourcarpet&quot;:[{&quot;type&quot;:&quot;contourcarpet&quot;,&quot;colorbar&quot;:{&quot;outlinewidth&quot;:0,&quot;ticks&quot;:&quot;&quot;}}],&quot;contour&quot;:[{&quot;type&quot;:&quot;contour&quot;,&quot;colorbar&quot;:{&quot;outlinewidth&quot;:0,&quot;ticks&quot;:&quot;&quot;},&quot;colorscale&quot;:[[0.0,&quot;#0d0887&quot;],[0.1111111111111111,&quot;#46039f&quot;],[0.2222222222222222,&quot;#7201a8&quot;],[0.3333333333333333,&quot;#9c179e&quot;],[0.4444444444444444,&quot;#bd3786&quot;],[0.5555555555555556,&quot;#d8576b&quot;],[0.6666666666666666,&quot;#ed7953&quot;],[0.7777777777777778,&quot;#fb9f3a&quot;],[0.8888888888888888,&quot;#fdca26&quot;],[1.0,&quot;#f0f921&quot;]]}],&quot;surface&quot;:[{&quot;type&quot;:&quot;surface&quot;,&quot;colorbar&quot;:{&quot;outlinewidth&quot;:0,&quot;ticks&quot;:&quot;&quot;},&quot;colorscale&quot;:[[0.0,&quot;#0d0887&quot;],[0.1111111111111111,&quot;#46039f&quot;],[0.2222222222222222,&quot;#7201a8&quot;],[0.3333333333333333,&quot;#9c179e&quot;],[0.4444444444444444,&quot;#bd3786&quot;],[0.5555555555555556,&quot;#d8576b&quot;],[0.6666666666666666,&quot;#ed7953&quot;],[0.7777777777777778,&quot;#fb9f3a&quot;],[0.8888888888888888,&quot;#fdca26&quot;],[1.0,&quot;#f0f921&quot;]]}],&quot;mesh3d&quot;:[{&quot;type&quot;:&quot;mesh3d&quot;,&quot;colorbar&quot;:{&quot;outlinewidth&quot;:0,&quot;ticks&quot;:&quot;&quot;}}],&quot;scatter&quot;:[{&quot;fillpattern&quot;:{&quot;fillmode&quot;:&quot;overlay&quot;,&quot;size&quot;:10,&quot;solidity&quot;:0.2},&quot;type&quot;:&quot;scatter&quot;}],&quot;parcoords&quot;:[{&quot;type&quot;:&quot;parcoords&quot;,&quot;line&quot;:{&quot;colorbar&quot;:{&quot;outlinewidth&quot;:0,&quot;ticks&quot;:&quot;&quot;}}}],&quot;scatterpolargl&quot;:[{&quot;type&quot;:&quot;scatterpolargl&quot;,&quot;marker&quot;:{&quot;colorbar&quot;:{&quot;outlinewidth&quot;:0,&quot;ticks&quot;:&quot;&quot;}}}],&quot;bar&quot;:[{&quot;error_x&quot;:{&quot;color&quot;:&quot;#2a3f5f&quot;},&quot;error_y&quot;:{&quot;color&quot;:&quot;#2a3f5f&quot;},&quot;marker&quot;:{&quot;line&quot;:{&quot;color&quot;:&quot;#E5ECF6&quot;,&quot;width&quot;:0.5},&quot;pattern&quot;:{&quot;fillmode&quot;:&quot;overlay&quot;,&quot;size&quot;:10,&quot;solidity&quot;:0.2}},&quot;type&quot;:&quot;bar&quot;}],&quot;scattergeo&quot;:[{&quot;type&quot;:&quot;scattergeo&quot;,&quot;marker&quot;:{&quot;colorbar&quot;:{&quot;outlinewidth&quot;:0,&quot;ticks&quot;:&quot;&quot;}}}],&quot;scatterpolar&quot;:[{&quot;type&quot;:&quot;scatterpolar&quot;,&quot;marker&quot;:{&quot;colorbar&quot;:{&quot;outlinewidth&quot;:0,&quot;ticks&quot;:&quot;&quot;}}}],&quot;histogram&quot;:[{&quot;marker&quot;:{&quot;pattern&quot;:{&quot;fillmode&quot;:&quot;overlay&quot;,&quot;size&quot;:10,&quot;solidity&quot;:0.2}},&quot;type&quot;:&quot;histogram&quot;}],&quot;scattergl&quot;:[{&quot;type&quot;:&quot;scattergl&quot;,&quot;marker&quot;:{&quot;colorbar&quot;:{&quot;outlinewidth&quot;:0,&quot;ticks&quot;:&quot;&quot;}}}],&quot;scatter3d&quot;:[{&quot;type&quot;:&quot;scatter3d&quot;,&quot;line&quot;:{&quot;colorbar&quot;:{&quot;outlinewidth&quot;:0,&quot;ticks&quot;:&quot;&quot;}},&quot;marker&quot;:{&quot;colorbar&quot;:{&quot;outlinewidth&quot;:0,&quot;ticks&quot;:&quot;&quot;}}}],&quot;scattermap&quot;:[{&quot;type&quot;:&quot;scattermap&quot;,&quot;marker&quot;:{&quot;colorbar&quot;:{&quot;outlinewidth&quot;:0,&quot;ticks&quot;:&quot;&quot;}}}],&quot;scattermapbox&quot;:[{&quot;type&quot;:&quot;scattermapbox&quot;,&quot;marker&quot;:{&quot;colorbar&quot;:{&quot;outlinewidth&quot;:0,&quot;ticks&quot;:&quot;&quot;}}}],&quot;scatterternary&quot;:[{&quot;type&quot;:&quot;scatterternary&quot;,&quot;marker&quot;:{&quot;colorbar&quot;:{&quot;outlinewidth&quot;:0,&quot;ticks&quot;:&quot;&quot;}}}],&quot;scattercarpet&quot;:[{&quot;type&quot;:&quot;scattercarpet&quot;,&quot;marker&quot;:{&quot;colorbar&quot;:{&quot;outlinewidth&quot;:0,&quot;ticks&quot;:&quot;&quot;}}}],&quot;carpet&quot;:[{&quot;aaxis&quot;:{&quot;endlinecolor&quot;:&quot;#2a3f5f&quot;,&quot;gridcolor&quot;:&quot;white&quot;,&quot;linecolor&quot;:&quot;white&quot;,&quot;minorgridcolor&quot;:&quot;white&quot;,&quot;startlinecolor&quot;:&quot;#2a3f5f&quot;},&quot;baxis&quot;:{&quot;endlinecolor&quot;:&quot;#2a3f5f&quot;,&quot;gridcolor&quot;:&quot;white&quot;,&quot;linecolor&quot;:&quot;white&quot;,&quot;minorgridcolor&quot;:&quot;white&quot;,&quot;startlinecolor&quot;:&quot;#2a3f5f&quot;},&quot;type&quot;:&quot;carpet&quot;}],&quot;table&quot;:[{&quot;cells&quot;:{&quot;fill&quot;:{&quot;color&quot;:&quot;#EBF0F8&quot;},&quot;line&quot;:{&quot;color&quot;:&quot;white&quot;}},&quot;header&quot;:{&quot;fill&quot;:{&quot;color&quot;:&quot;#C8D4E3&quot;},&quot;line&quot;:{&quot;color&quot;:&quot;white&quot;}},&quot;type&quot;:&quot;table&quot;}],&quot;barpolar&quot;:[{&quot;marker&quot;:{&quot;line&quot;:{&quot;color&quot;:&quot;#E5ECF6&quot;,&quot;width&quot;:0.5},&quot;pattern&quot;:{&quot;fillmode&quot;:&quot;overlay&quot;,&quot;size&quot;:10,&quot;solidity&quot;:0.2}},&quot;type&quot;:&quot;barpolar&quot;}],&quot;pie&quot;:[{&quot;automargin&quot;:true,&quot;type&quot;:&quot;pie&quot;}]},&quot;layout&quot;:{&quot;autotypenumbers&quot;:&quot;strict&quot;,&quot;colorway&quot;:[&quot;#636efa&quot;,&quot;#EF553B&quot;,&quot;#00cc96&quot;,&quot;#ab63fa&quot;,&quot;#FFA15A&quot;,&quot;#19d3f3&quot;,&quot;#FF6692&quot;,&quot;#B6E880&quot;,&quot;#FF97FF&quot;,&quot;#FECB52&quot;],&quot;font&quot;:{&quot;color&quot;:&quot;#2a3f5f&quot;},&quot;hovermode&quot;:&quot;closest&quot;,&quot;hoverlabel&quot;:{&quot;align&quot;:&quot;left&quot;},&quot;paper_bgcolor&quot;:&quot;white&quot;,&quot;plot_bgcolor&quot;:&quot;#E5ECF6&quot;,&quot;polar&quot;:{&quot;bgcolor&quot;:&quot;#E5ECF6&quot;,&quot;angularaxis&quot;:{&quot;gridcolor&quot;:&quot;white&quot;,&quot;linecolor&quot;:&quot;white&quot;,&quot;ticks&quot;:&quot;&quot;},&quot;radialaxis&quot;:{&quot;gridcolor&quot;:&quot;white&quot;,&quot;linecolor&quot;:&quot;white&quot;,&quot;ticks&quot;:&quot;&quot;}},&quot;ternary&quot;:{&quot;bgcolor&quot;:&quot;#E5ECF6&quot;,&quot;aaxis&quot;:{&quot;gridcolor&quot;:&quot;white&quot;,&quot;linecolor&quot;:&quot;white&quot;,&quot;ticks&quot;:&quot;&quot;},&quot;baxis&quot;:{&quot;gridcolor&quot;:&quot;white&quot;,&quot;linecolor&quot;:&quot;white&quot;,&quot;ticks&quot;:&quot;&quot;},&quot;caxis&quot;:{&quot;gridcolor&quot;:&quot;white&quot;,&quot;linecolor&quot;:&quot;white&quot;,&quot;ticks&quot;:&quot;&quot;}},&quot;coloraxis&quot;:{&quot;colorbar&quot;:{&quot;outlinewidth&quot;:0,&quot;ticks&quot;:&quot;&quot;}},&quot;colorscale&quot;:{&quot;sequential&quot;:[[0.0,&quot;#0d0887&quot;],[0.1111111111111111,&quot;#46039f&quot;],[0.2222222222222222,&quot;#7201a8&quot;],[0.3333333333333333,&quot;#9c179e&quot;],[0.4444444444444444,&quot;#bd3786&quot;],[0.5555555555555556,&quot;#d8576b&quot;],[0.6666666666666666,&quot;#ed7953&quot;],[0.7777777777777778,&quot;#fb9f3a&quot;],[0.8888888888888888,&quot;#fdca26&quot;],[1.0,&quot;#f0f921&quot;]],&quot;sequentialminus&quot;:[[0.0,&quot;#0d0887&quot;],[0.1111111111111111,&quot;#46039f&quot;],[0.2222222222222222,&quot;#7201a8&quot;],[0.3333333333333333,&quot;#9c179e&quot;],[0.4444444444444444,&quot;#bd3786&quot;],[0.5555555555555556,&quot;#d8576b&quot;],[0.6666666666666666,&quot;#ed7953&quot;],[0.7777777777777778,&quot;#fb9f3a&quot;],[0.8888888888888888,&quot;#fdca26&quot;],[1.0,&quot;#f0f921&quot;]],&quot;diverging&quot;:[[0,&quot;#8e0152&quot;],[0.1,&quot;#c51b7d&quot;],[0.2,&quot;#de77ae&quot;],[0.3,&quot;#f1b6da&quot;],[0.4,&quot;#fde0ef&quot;],[0.5,&quot;#f7f7f7&quot;],[0.6,&quot;#e6f5d0&quot;],[0.7,&quot;#b8e186&quot;],[0.8,&quot;#7fbc41&quot;],[0.9,&quot;#4d9221&quot;],[1,&quot;#276419&quot;]]},&quot;xaxis&quot;:{&quot;gridcolor&quot;:&quot;white&quot;,&quot;linecolor&quot;:&quot;white&quot;,&quot;ticks&quot;:&quot;&quot;,&quot;title&quot;:{&quot;standoff&quot;:15},&quot;zerolinecolor&quot;:&quot;white&quot;,&quot;automargin&quot;:true,&quot;zerolinewidth&quot;:2},&quot;yaxis&quot;:{&quot;gridcolor&quot;:&quot;white&quot;,&quot;linecolor&quot;:&quot;white&quot;,&quot;ticks&quot;:&quot;&quot;,&quot;title&quot;:{&quot;standoff&quot;:15},&quot;zerolinecolor&quot;:&quot;white&quot;,&quot;automargin&quot;:true,&quot;zerolinewidth&quot;:2},&quot;scene&quot;:{&quot;xaxis&quot;:{&quot;backgroundcolor&quot;:&quot;#E5ECF6&quot;,&quot;gridcolor&quot;:&quot;white&quot;,&quot;linecolor&quot;:&quot;white&quot;,&quot;showbackground&quot;:true,&quot;ticks&quot;:&quot;&quot;,&quot;zerolinecolor&quot;:&quot;white&quot;,&quot;gridwidth&quot;:2},&quot;yaxis&quot;:{&quot;backgroundcolor&quot;:&quot;#E5ECF6&quot;,&quot;gridcolor&quot;:&quot;white&quot;,&quot;linecolor&quot;:&quot;white&quot;,&quot;showbackground&quot;:true,&quot;ticks&quot;:&quot;&quot;,&quot;zerolinecolor&quot;:&quot;white&quot;,&quot;gridwidth&quot;:2},&quot;zaxis&quot;:{&quot;backgroundcolor&quot;:&quot;#E5ECF6&quot;,&quot;gridcolor&quot;:&quot;white&quot;,&quot;linecolor&quot;:&quot;white&quot;,&quot;showbackground&quot;:true,&quot;ticks&quot;:&quot;&quot;,&quot;zerolinecolor&quot;:&quot;white&quot;,&quot;gridwidth&quot;:2}},&quot;shapedefaults&quot;:{&quot;line&quot;:{&quot;color&quot;:&quot;#2a3f5f&quot;}},&quot;annotationdefaults&quot;:{&quot;arrowcolor&quot;:&quot;#2a3f5f&quot;,&quot;arrowhead&quot;:0,&quot;arrowwidth&quot;:1},&quot;geo&quot;:{&quot;bgcolor&quot;:&quot;white&quot;,&quot;landcolor&quot;:&quot;#E5ECF6&quot;,&quot;subunitcolor&quot;:&quot;white&quot;,&quot;showland&quot;:true,&quot;showlakes&quot;:true,&quot;lakecolor&quot;:&quot;white&quot;},&quot;title&quot;:{&quot;x&quot;:0.05},&quot;mapbox&quot;:{&quot;style&quot;:&quot;light&quot;}}},&quot;margin&quot;:{&quot;t&quot;:80,&quot;b&quot;:40,&quot;l&quot;:60,&quot;r&quot;:40},&quot;title&quot;:{&quot;text&quot;:&quot;&lt;b&gt;Thermodynamic Power Balance: Cycling at 250W airspeed 25km/h in 32\u00b0C humidity 60%&lt;/b&gt;&lt;br&gt;&lt;span style=&#x27;color:green&#x27;&gt;Core Temp Drift: +0.0 \u00b0C/hr &lt;/span&gt;  | &lt;span style=&#x27;color:gray&#x27;&gt;Evaporative Ceiling: 2081 W&lt;/span&gt;&quot;},&quot;showlegend&quot;:false,&quot;yaxis&quot;:{&quot;title&quot;:{&quot;text&quot;:&quot;Power (Watts)&quot;},&quot;range&quot;:[-1000,2000],&quot;zeroline&quot;:true,&quot;zerolinecolor&quot;:&quot;green&quot;,&quot;zerolinewidth&quot;:2},&quot;waterfallgap&quot;:0.3,&quot;dragmode&quot;:&quot;zoom&quot;}}' data-config='{}'></marimo-plotly>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "Kclp",
+      "code_hash": "b686f70725866eaeda3fa7118b22bcf6",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<div style='display: flex;flex: 1;flex-direction: row;justify-content: space-between;align-items: normal;flex-wrap: nowrap;gap: 1rem'><div style='display: flex;flex: 1;flex-direction: column;justify-content: flex-start;align-items: normal;flex-wrap: nowrap;gap: 0.5rem'><span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"cycling-inputs\">\ud83d\udeb4 Cycling Inputs</h3></span><marimo-ui-element object-id='SFPL-2' random-id='7a14037b-3190-a241-94dd-faa459c1716f'><marimo-slider data-initial-value='250' data-label='&quot;&lt;span class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&gt;&lt;span class=&#92;&quot;paragraph&#92;&quot;&gt;Mechanical Power (W)&lt;/span&gt;&lt;/span&gt;&quot;' data-start='0' data-stop='500' data-step='10' data-steps='[]' data-debounce='false' data-disabled='false' data-orientation='&quot;horizontal&quot;' data-show-value='false' data-include-input='false' data-full-width='false'></marimo-slider></marimo-ui-element><marimo-ui-element object-id='SFPL-3' random-id='4559bf90-4207-43a4-6f51-6d4f331e58e4'><marimo-slider data-initial-value='25' data-label='&quot;&lt;span class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&gt;&lt;span class=&#92;&quot;paragraph&#92;&quot;&gt;Air Speed (km/h)&lt;/span&gt;&lt;/span&gt;&quot;' data-start='0' data-stop='60' data-step='1' data-steps='[]' data-debounce='false' data-disabled='false' data-orientation='&quot;horizontal&quot;' data-show-value='false' data-include-input='false' data-full-width='false'></marimo-slider></marimo-ui-element></div><div style='display: flex;flex: 1;flex-direction: column;justify-content: flex-start;align-items: normal;flex-wrap: nowrap;gap: 0.5rem'><div style='display: flex;flex: 1;flex-direction: row;justify-content: space-between;align-items: normal;flex-wrap: nowrap;gap: 0.5rem'><span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"environment\">\ud83c\udf24\ufe0f Environment</h3></span><marimo-ui-element object-id='SFPL-6' random-id='47fcad80-2c07-8a0c-eda8-f2489d7bbb3f'><marimo-switch data-initial-value='false' data-label='&quot;&lt;span class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&gt;&lt;span class=&#92;&quot;paragraph&#92;&quot;&gt;Direct sunlight&lt;/span&gt;&lt;/span&gt;&quot;' data-disabled='false'></marimo-switch></marimo-ui-element></div><marimo-ui-element object-id='SFPL-4' random-id='4135dc47-32f2-0514-30ca-8c501e606b35'><marimo-slider data-initial-value='32' data-label='&quot;&lt;span class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&gt;&lt;span class=&#92;&quot;paragraph&#92;&quot;&gt;Ambient Temp (\u00b0C)&lt;/span&gt;&lt;/span&gt;&quot;' data-start='25' data-stop='45' data-step='1' data-steps='[]' data-debounce='false' data-disabled='false' data-orientation='&quot;horizontal&quot;' data-show-value='false' data-include-input='false' data-full-width='false'></marimo-slider></marimo-ui-element><marimo-ui-element object-id='SFPL-5' random-id='ffe9649f-099b-369d-7e0d-8254e159521d'><marimo-slider data-initial-value='60' data-label='&quot;&lt;span class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&gt;&lt;span class=&#92;&quot;paragraph&#92;&quot;&gt;Rel. Humidity (%)&lt;/span&gt;&lt;/span&gt;&quot;' data-start='10' data-stop='100' data-step='5' data-steps='[]' data-debounce='false' data-disabled='false' data-orientation='&quot;horizontal&quot;' data-show-value='false' data-include-input='false' data-full-width='false'></marimo-slider></marimo-ui-element><span class=\"markdown prose dark:prose-invert contents\"></span></div><div style='display: flex;flex: 1;flex-direction: column;justify-content: flex-start;align-items: normal;flex-wrap: nowrap;gap: 0.5rem'><span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"rider-inputs\">\ud83d\udeb4\ud83c\udffd\u200d\u2642\ufe0f Rider Inputs</h3></span><marimo-ui-element object-id='SFPL-0' random-id='0b5e2818-4bd3-8883-6713-27abf103af56'><marimo-slider data-initial-value='70' data-label='&quot;&lt;span class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&gt;&lt;span class=&#92;&quot;paragraph&#92;&quot;&gt;Weight (kg)&lt;/span&gt;&lt;/span&gt;&quot;' data-start='45' data-stop='100' data-step='1' data-steps='[]' data-debounce='false' data-disabled='false' data-orientation='&quot;horizontal&quot;' data-show-value='false' data-include-input='false' data-full-width='false'></marimo-slider></marimo-ui-element><marimo-ui-element object-id='SFPL-1' random-id='1dae0138-d420-31f8-55cf-2a3bd493aed9'><marimo-slider data-initial-value='1.78' data-label='&quot;&lt;span class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&gt;&lt;span class=&#92;&quot;paragraph&#92;&quot;&gt;Height (m)&lt;/span&gt;&lt;/span&gt;&quot;' data-start='1.5' data-stop='2.0' data-step='0.01' data-steps='[]' data-debounce='false' data-disabled='false' data-orientation='&quot;horizontal&quot;' data-show-value='false' data-include-input='false' data-full-width='false'></marimo-slider></marimo-ui-element></div></div>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "emfo",
+      "code_hash": "d8d3f77f424e3cbc38ab30a0d89e2cf2",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><ul>\n<li>The bar on the left shows the rate of production of internal heat. The next three bars show how the body attempts to dissipate excess heat through convection, radiation and evaporation. Red is heating and blue is cooling. Any remaining imbalance affects the body's core temperatue at the rate shown in the Net Heat Storage bar on the far right hand side.</li>\n<li>Start by adjusting the weight and height sliders on the right to match your stature. These are used to estmate your body surface area, which relates to heat loss.</li>\n<li>Ajusting the slider for Mechanical Power (the figure displayed on your power meter) drives the amount of Internal Heat generated by the muscles. This heat is the energy lost in the conversion of chemical energy into mechanical energy. As you push harder on the pedals, your body generates more internal heat. This needs to be lost to the environment in order to maintain a steady core body temperature.</li>\n<li>Changing the Airspeed affects convection and evaporation. Airspeed is primarily determined by the speed you are riding your bike, but it also changes if there is a strong wind blowing. Cycling has a great advantage over running and other sports in creating its own airflow. The cooling effect of the apparent wind leaves cyclists less exposed to the risk of overheating in hot weather. However this benefit falls when riding uphill with the same power but at a lower speeds (move the slider to the left). If you reduce Airspeed to zero, you see how important it is to use a fan and keep the room cool when riding on an indoor turbo. In a hot, humid room with no airflow, you body can overheat quickly.</li>\n<li>Toggle the direct sunlight button to see the significant radiative warming effect of moving from shade/cloud cover into direct sunlight. On a clear sunny day at noon this can raise the effective ambient temperature by a staggering <marimo-tex class=\"arithmatex\">||(30^\\circ\\text{C}||)</marimo-tex>, so your body gains rather than losing heat. I was grateful to be climbing under tree cover in the Atlantic Pyrenees earlier this summer.</li>\n<li>The effects of rising Ambient Temperature are the key focus of this analysis. In the shade, your body can lose heat if your skin is warmer than the environment. By moving the slider to the right, you see that when heatwave temperatures exceed skin temperature (set at <marimo-tex class=\"arithmatex\">||(34^\\circ\\text{C}||)</marimo-tex> for this model), convection and radiation can no longer cool the body. In fact they switch to warming the body. Evaporation becomes the only remaining means of heat loss.</li>\n<li>The Relative Humidity slider puts a ceiling on the rate of evaporation (shown at the top of the chart). In very hot humid conditions, sweat cannot evaporate and rolls off the skin without providing any cooling effect. In damper regions relative humidity tends to be over 60%, while in arid areas it may be below 30%. The historic average for the Tour de France in July is <a href=\"https://www.worlddata.info/europe/france/climate.php\">74%</a>. Global humidity is on a rising trend around the world.</li>\n<li>When the body is able to dissipate excess heat, Net Heat Storage is zero and core body temperature remains stable (thermal homeostasis). However, when the body is unable to dump excess heat, core body temperature starts to rise. Normal body temperature is <marimo-tex class=\"arithmatex\">||(37.4^\\circ\\text{C}||)</marimo-tex> and an increase of <marimo-tex class=\"arithmatex\">||(3^\\circ||)</marimo-tex> can cause the symptoms of heatstroke: fatigue, diziness, headache, nausea etc.. When the Net Heat Storage is positive, the model estimates how long it will take for heatstroke to occur, if power is maintained under the prevailing ambient conditions.</li>\n<li>It is possible for Net Heat Storage to become negative, even in hot weather. For example, if you stop pedalling (set Mechanical Power to zero) while freewheeling down a hill at 60km/h in <marimo-tex class=\"arithmatex\">||(30^\\circ\\text{C}||)</marimo-tex> on a cloudy day, you lose heat from the convective airflow over your skin (and most likely some more from the evaporation of sweat produced during the prior ascent). This is why it is helpful to put on a gilet (or stuff a copy of Gazzetta dello Sport down the front of your jersey) as you crest the Stelvio. The cooling effect is probably less than the model suggests, because temperates are higher at lower altitudes - it's warmer in the valleys than on the summits.</li>\n</ul></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "Hstk",
+      "code_hash": "8f341f5914e41885963f728dd5b3a731",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">Is the world becomes warmer, more of us will need to apt to riding the heatwaves. The next in article this series explores the physiological changes that occur when you encounter a hot environment.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "nWHF",
+      "code_hash": "271b9a58d9baf29c36fb164978da880b",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"technical-appendix-breakdown-of-the-balance-of-power-equation\">Technical Appendix: Breakdown of the Balance of Power Equation</h2>\n<h3 id=\"step-1-internal-heat-production-p_textheat\">Step 1: Internal Heat Production (<marimo-tex class=\"arithmatex\">||(P_{\\text{heat}}||)</marimo-tex>)</h3>\n<span class=\"paragraph\">The total metabolic power expended by your body (<marimo-tex class=\"arithmatex\">||(P_{\\text{met}}||)</marimo-tex>) depends on mechanical power output (<marimo-tex class=\"arithmatex\">||(P_{\\text{mech}}||)</marimo-tex>) and gross efficiency (<marimo-tex class=\"arithmatex\">||(\\eta \\approx 0.22||)</marimo-tex>):<br><marimo-tex class=\"arithmatex\">||(P_{\\text{met}} = \\frac{P_{\\text{mech}}}{\\eta}||)</marimo-tex><br>The rate of internal thermal power generated by working muscles (<marimo-tex class=\"arithmatex\">||(P_{\\text{heat}}||)</marimo-tex>) is the difference between total metabolic power and mechanical power pushed to the pedals:<br><marimo-tex class=\"arithmatex\">||(P_{\\text{heat}} = P_{\\text{met}} - P_{\\text{mech}} = P_{\\text{mech}} \\times \\left(\\frac{1 - \\eta}{\\eta}\\right)||)</marimo-tex><br></span>\n<h3 id=\"step-2-convective-heat-transfer-p_textconv\">Step 2: Convective Heat Transfer (<marimo-tex class=\"arithmatex\">||(P_{\\text{conv}}||)</marimo-tex>)</h3>\n<span class=\"paragraph\">Convective cooling occurs as moving air carries thermal energy away from exposed skin. Modern Computational Fluid Dynamics research on cyclists by <a href=\"https://europepmc.org/article/MED/21497817\">Defaeye (2011)</a> demonstrates that highly turbulent airflow yields a power-law exponent estimate of  heat transfer coefficient (<marimo-tex class=\"arithmatex\">||(h_c||)</marimo-tex>) that scales non-linearly with air velocity (<marimo-tex class=\"arithmatex\">||(v||)</marimo-tex> in <marimo-tex class=\"arithmatex\">||(\\text{m/s}||)</marimo-tex>):<br><marimo-tex class=\"arithmatex\">||(h_c = 5.8 \\times v^{0.8} \\quad [\\text{W/(m}^2\\cdot^\\circ\\text{C)}]||)</marimo-tex><br>The total convective power exchange is:<br><marimo-tex class=\"arithmatex\">||(P_{\\text{conv}} = h_c \\times BSA \\times (T_s - T_a)||)</marimo-tex><br><marimo-tex class=\"arithmatex\">||(BSA||)</marimo-tex>: Body Surface Area can be estimated from height and weight (Du Bois formula)<br><marimo-tex class=\"arithmatex\">||(T_s||)</marimo-tex>: Skin temperature<br><marimo-tex class=\"arithmatex\">||(T_a||)</marimo-tex>: Ambient temperature of the air<br></span>\n<ul>\n<li>Cool/Warm Air (<marimo-tex class=\"arithmatex\">||(T_a &lt; T_s||)</marimo-tex>): <marimo-tex class=\"arithmatex\">||(P_{\\text{conv}}||)</marimo-tex> is positive\u2014air cools the skin.</li>\n<li>Extreme Heat (<marimo-tex class=\"arithmatex\">||(T_a &gt; T_s||)</marimo-tex>): <marimo-tex class=\"arithmatex\">||(P_{\\text{conv}}||)</marimo-tex> becomes negative\u2014air actually heats the body, adding to the thermal load.</li>\n</ul>\n<h3 id=\"step-3-radiative-heat-transfer-p_textrad\">Step 3: Radiative Heat Transfer (<marimo-tex class=\"arithmatex\">||(P_{\\text{rad}}||)</marimo-tex>)</h3>\n<span class=\"paragraph\">Radiative heat loss is driven by the temperature difference between skin and surrounding air, surfaces and sunlight. It is estimated using a linearized radiative heat transfer coefficient (<marimo-tex class=\"arithmatex\">||(h_r \\approx 6.0 \\text{ W/(m}^2\\cdot^\\circ\\text{C)}||)</marimo-tex>) with an effective area of between 70% and 75% of body surface. Exposure to direct sunlight versus shade has a signficant impact.<br><marimo-tex class=\"arithmatex\">||(P_{\\text{rad}} = h_r \\times (BSA \\times 0.72) \\times (T_s - (T_a + T_{sun}))||)</marimo-tex><br>where <marimo-tex class=\"arithmatex\">||(T_{sun} = 0^\\circ\\text{C}||)</marimo-tex> in shade and <marimo-tex class=\"arithmatex\">||(30^\\circ\\text{C}||)</marimo-tex> in direct sunlight, representing a clear summer day at noon. </span>\n<h3 id=\"step-4-evaporative-potential-p_textevap-max-and-humidity\">Step 4: Evaporative Potential (<marimo-tex class=\"arithmatex\">||(P_{\\text{evap, max}}||)</marimo-tex>) and Humidity</h3>\n<span class=\"paragraph\">When ambient temperature exceeds skin temperature (<marimo-tex class=\"arithmatex\">||(T_a &gt; T_s||)</marimo-tex>), convection and radiation can no longer cool the body. Evaporation becomes the only remaining avenue for heat loss. <br>Evaporation is governed by the difference in water vapor pressure between wet skin <marimo-tex class=\"arithmatex\">||(P_{sk,s} = P_{sat}(T_s)||)</marimo-tex> and the air, which are derived from the <a href=\"https://en.wikipedia.org/wiki/Tetens_equation\">Tetens Equation</a> and adjusting for the relative humidity of the air.<br><marimo-tex class=\"arithmatex\">||(P_a = \\left(\\frac{RH}{100}\\right) \\times P_{sat}(T_a)||)</marimo-tex><br>The amount of evaporative heat loss depends on a heat transfer coefficient linked to airflow. \nUsing the Lewis Relation for heat and mass transfer, the evaporative heat transfer coefficient (<marimo-tex class=\"arithmatex\">||(h_e||)</marimo-tex>) is directly tied to the convective wind coefficient (<marimo-tex class=\"arithmatex\">||(h_c||)</marimo-tex>):<br><marimo-tex class=\"arithmatex\">||(h_e = 16.5 \\times h_c \\quad (\\text{in W/m}^2\\cdot\\text{kPa})||)</marimo-tex><br>\nMaximum Evaporative Potential (<marimo-tex class=\"arithmatex\">||(P_{\\text{evap, max}}||)</marimo-tex> ) represents the absolute physiological ceiling of how much heat the environment can evaporate from the athlete's body surface area (<marimo-tex class=\"arithmatex\">||(BSA||)</marimo-tex>):<br><marimo-tex class=\"arithmatex\">||(P_{\\text{evap, max}}  = h_e \\times BSA \\times (P_{sk,s} - P_a)||)</marimo-tex>.\nThis declines (potentially to zero) in very hot and humid conditions.<br>\nThe body's Required Evaporative Cooling (<marimo-tex class=\"arithmatex\">||(P_{\\text{evap, req}}||)</marimo-tex>) to maintain stable core temperature is whatever internal heat reaches the skin that wasn't cleared by convection or radiation:<br><marimo-tex class=\"arithmatex\">||(P_{\\text{evap, req}} = P_{\\text{heat}} - (P_{\\text{conv}} + P_{\\text{rad}})||)</marimo-tex><br>Actual evaporative heat loss (<marimo-tex class=\"arithmatex\">||(P_{\\text{evap}}||)</marimo-tex>) cannot exceed <marimo-tex class=\"arithmatex\">||(P_{\\text{evap, max}}||)</marimo-tex>:<br><marimo-tex class=\"arithmatex\">||(P_{\\text{evap}} = \\min(P_{\\text{evap, req}}, P_{\\text{evap, max}})||)</marimo-tex><br>If <marimo-tex class=\"arithmatex\">||(P_{\\text{evap, req}} &gt; P_{\\text{evap, max}}||)</marimo-tex>, the skin cannot evaporate all the sweat produced. Extra sweat drips off uselessly (wasted sweat), while unevaporated thermal energy is trapped inside the body.</span>\n<h3 id=\"step-5-thermal-storage-p_textstorage-and-core-temperature-drift\">Step 5: Thermal Storage (<marimo-tex class=\"arithmatex\">||(P_{\\text{storage}}||)</marimo-tex>) and Core Temperature Drift</h3>\n<span class=\"paragraph\">Summing all dissipation channels gives the net power accumulating in tissue:<br><marimo-tex class=\"arithmatex\">||(P_{\\text{storage}} = P_{\\text{heat}} - (P_{\\text{conv}} + P_{\\text{rad}} + P_{\\text{evap}})||)</marimo-tex><br>This can be converted into an hourly rate of core temperature change, taking account of the specific heat capacity of human tissue.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "pEMr",
+      "code_hash": "ff96726495c86d7dcb6dcbc5e9c18cab",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">Source code for this project at <a href=\"https://github.com/science4performance/RidingTheHeatwave\" rel=\"noopener noreferrer\" target=\"_blank\">https://github.com/science4performance/RidingTheHeatwave</a></span></span>"
+          }
+        }
+      ],
+      "console": []
+    }
+  ]
+}
