@@ -27,23 +27,47 @@ def _():
     import math
 
     __generated_with = "0.1.0"
-    app = mo.App(width="full")
+    app = mo.App(width="medium")
+
+    def _(mo):
+        mo.md("""
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        """)
+
+
     return go, math, mo
 
 
-@app.cell(hide_code=True)
+@app.cell
 def _(mo):
-    mo.md(r"""
-    # Riding the Heatweave: The Balance of Power
-    This is the first part of a series of three articles about cycling in a world of increasing heatwaves and global warming. We look at the physics of heat loss.
+    mo.md("""
+    <style>
+        /* Make all marimo columns stack on small screens */.mo-hstack {
+                flex-direction: column !important;
+                gap: 16px !important;
+            }
+            .mo-vstack {
+                width: 100% !important;
+            }
+            .mobile-container {
+                width: 100%;
+                padding: 0 12px;
+            }
+            img, .plotly-graph-div {
+                max-width: 100% !important;
+                height: auto !important;
+            }
+        }
+    </style>
     """)
     return
 
 
 @app.cell(hide_code=True)
 def _(mo):
-    mo.md("""
-    <img src="https://raw.githubusercontent.com/science4performance/RidingTheHeatwave/master/docs/images/AridCyclist_20260812_114639.png" width="360">
+    mo.md(r"""
+    # The Balance of Power
+    This is the first part of a series of three articles about cycling in a world of increasing heatwaves and global warming. We look at the physics of heat loss.<br>
     """)
     return
 
@@ -198,6 +222,11 @@ def _(go, height, humidity, physics_engine, power, speed, temp, weight):
     )
 
     fig.update_yaxes(range=[-1000, 2000], zeroline=True, zerolinecolor='green', zerolinewidth=2)
+    fig.update_layout(
+        autosize=True,
+        width=None,
+        height=None,
+    )
     return P_evap, P_evap_max
 
 
