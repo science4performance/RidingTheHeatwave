@@ -1,0 +1,98 @@
+{
+  "version": "1",
+  "metadata": {
+    "marimo_version": "0.18.3"
+  },
+  "cells": [
+    {
+      "id": "Hbol",
+      "code_hash": null,
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "dXBa",
+      "code_hash": null,
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "luni",
+      "code_hash": "1d0db38904205bec4d6f6f6a1f6cec3e",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "XlUu",
+      "code_hash": "d148959d0e45f0d22479da4ecdab3b36",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h1 id=\"in-the-heat-of-the-moment-the-acute-physiology-of-cycling-in-a-heatwave\">In the Heat of the Moment: The Acute Physiology of Cycling in a Heatwave</h1>\n<span class=\"paragraph\">In Part 1, we broke down the physics of cycling in the heat using the Power Balance Equation. We saw that when the body cannot dissipate internal heat fast enough, it accumulates, driving up core body temperature. Biology operates within the constraints set by physics.<br>\nWhen you ride into a heatwave without prior heat exposure, your body triggers a cascade of acute physiological emergencies. To keep your core temperature from reaching lethal levels (<marimo-tex class=\"arithmatex\">||(&gt;40.5^\\circ\\text{C}||)</marimo-tex>), your autonomic nervous system executes a sharp reallocation of internal resources. Understanding this acute response reveals why your heart rate drifts higher, your legs feel empty and your functional threshold power (FTP) evaporates on a hot day. It also highlights the importance of adequate hydration and replacement of electrolytes.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "THrC",
+      "code_hash": "8789b60ffee84904883350e241160092",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "WkmH",
+      "code_hash": null,
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "WvMt",
+      "code_hash": null,
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "LWcr",
+      "code_hash": "2039b5190af6260814a7b0b7e2591a17",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\"><img src=\"https://science4performance.com/wp-content/uploads/2026/08/AridCyclist_20260812_114639.png\"<br /> height=\"360\" width=\"360\"></span></span>"
+          }
+        }
+      ],
+      "console": []
+    }
+  ]
+}
