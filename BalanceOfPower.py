@@ -97,7 +97,7 @@ def _(mo):
 def _(mo):
     mo.md(r"""
     ## The Thermodynamics of Cycling in the Heat
-    When you look down at your power meter and see 280 W, it is telling you the rate at which your legs are transferring energy into the drivechain to overcome rolling resistance, gravity and aerodynamic drag. However this is just a fraction of power that your body is generating. Muscles are only 20% to 25% efficient at converting chemical energy (think ATP) into mechanical energy. The rest of the effort is wasted in the form of internal heat. <br>
+    When you look down at your power meter and see 280 W, it is telling you the rate at which your legs are transferring energy into the drive chain to overcome rolling resistance, gravity and aerodynamic drag. However this is just a fraction of power that your body is generating. Muscles are only 20% to 25% efficient at converting chemical energy (think ATP) into mechanical energy. The rest of the effort is wasted in the form of internal heat. <br>
     Riding at 280 W, your body is producing excess heat equivalent to a 1 kW electric heater. Heatstroke occurs when body temperature exceeds $40^\circ\text{C}$. Under severe heat stress, proteins start to unfold and stick together like a poached egg. To prevent your core temperature from soaring into dangerous territory, your body must continuously dissipate high thermal loads into the surrounding environment.<br>
     There are three ways for the body to lose heat:
     - the flow of cooler air over the skin
@@ -316,7 +316,7 @@ def _(mo):
 @app.cell(hide_code=True)
 def _(mo):
     mo.md(r"""
-    Is the world becomes warmer, more of us will need to apt to riding the heatwaves. The next in article this series explores the physiological changes that occur when you encounter a hot environment.
+    In Part 2: In the Heat of the Moment, we will examine the acute physiological effects of riding in hot weather: how the cardiovascular system diverts blood flow from working muscles to skin, why heart rate rises, the importance of hydration and how the brain's Central Governor steps in to reduce power output.
     """)
     return
 
